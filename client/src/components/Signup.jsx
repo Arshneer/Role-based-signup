@@ -19,7 +19,7 @@ export default function Signup() {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/login`, data);
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/signup`, data);
 
       setMsg("Signup successful ✅");
 
